@@ -1,2 +1,6 @@
 # limitTrash
-script to limit the user trash size
+This script to limit the user trash size.
+
+It needs autotrash
+
+     sudo apt-get install autotrash
