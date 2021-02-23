@@ -1,3 +1,4 @@
+![limitTrash](http://www.maxvessi.net/uffizi/pictures/MaxBin.jpg)
 # limitTrash
 This script, [limitTrash.sh](limitTrash.sh), is to limit the user trash folder size. It mantains just the value indicated in the script, removing the oldest files first.
 
