@@ -1,5 +1,5 @@
 # limitTrash
-This script to limit the user trash size.
+This script to limit the user trash folder size.
 
 It needs [autotrash](https://github.com/bneijt/autotrash)
 
