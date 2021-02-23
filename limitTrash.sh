@@ -4,3 +4,13 @@
  
  currSize=`du -cs |   { read first rest ; echo $first ; }`
  
+ 
+ limit= $limit * 1024 *1024
+ 
+ toDelete= $curSize - $limit
+ 
+if ["$toDelete" -gt 0 ]
+  then
+  toDelete= $toDelete * 1024 
+  
+  
