@@ -1,6 +1,6 @@
  #!/bin/bash
  
- limit=10  #Trash size limit Gb
+ limit=10  #Trash size limit Gib
  
  cd  ~/.local/share/Trash 
  
