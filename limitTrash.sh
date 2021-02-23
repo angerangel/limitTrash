@@ -2,17 +2,16 @@
  
  limit=10  #Trash size limit Gb
  
- currSize=`du -cs |   { read first rest ; echo $first ; }`
+ cd  ~/.local/share/Trash 
  
- 
- limit= $limit * 1024 *1024
- 
- toDelete= $curSize - $limit
- 
-if ["$toDelete" -gt 0 ]
+ currSize=`du -cs   |   { read first rest ; echo $first ; }`
+  
+ limit=`expr $limit \* 1024 \* 1024`
+   
+ toDelete=`expr $currSize - $limit`
+   
+if [  $toDelete -gt 0 ]
   then
-  toDelete= $toDelete * 1024 
-  autotrash -d $toDelete
+  toDelete=`expr $toDelete / 1024`
+   autotrash   --delete $toDelete
 fi
-  
-  
