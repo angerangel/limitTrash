@@ -12,5 +12,7 @@
 if ["$toDelete" -gt 0 ]
   then
   toDelete= $toDelete * 1024 
+  autotrash -d $toDelete
+fi
   
   
